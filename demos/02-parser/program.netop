@@ -1,0 +1,6 @@
+var:let result 2 + 3 * 4
+flow:if result >= 10 && true
+  io:print result
+flow:else
+  io:print 0
+flow:end

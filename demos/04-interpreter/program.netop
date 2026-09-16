@@ -1,0 +1,7 @@
+var:let sum 0
+var:let i 1
+flow:while i <= 10
+  var:set sum sum + i
+  var:set i i + 1
+flow:end
+io:print sum

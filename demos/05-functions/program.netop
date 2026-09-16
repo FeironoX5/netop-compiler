@@ -1,0 +1,7 @@
+fn:define factorial n
+  flow:if n <= 1
+    fn:return 1
+  flow:end
+  fn:return n * factorial(n - 1)
+fn:end
+io:print factorial(6)

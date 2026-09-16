@@ -1,0 +1,15 @@
+var:let values [5, 1, 4, 2, 3]
+var:let i 0
+flow:while i < length(values)
+  var:let j 0
+  flow:while j + 1 < length(values) - i
+    flow:if values[j] > values[j + 1]
+      var:let temporary values[j]
+      var:set values[j] values[j + 1]
+      var:set values[j + 1] temporary
+    flow:end
+    var:set j j + 1
+  flow:end
+  var:set i i + 1
+flow:end
+io:print values

@@ -1,0 +1,4 @@
+# Same command shape as netop/server: [path:]name [args...]
+scene:new computer pc1
+pc1:interface-set eth0 192.168.1.1 255.255.255.0
+pc1:send 192.168.1.2 17 1

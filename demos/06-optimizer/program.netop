@@ -1,0 +1,6 @@
+var:let folded (2 + 3) * 4
+flow:if false
+  io:print "dead branch"
+flow:else
+  io:print folded
+flow:end

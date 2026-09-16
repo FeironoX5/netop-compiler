@@ -1,0 +1,3 @@
+var:let initialized 42
+var:let unused "warning"
+io:print initialized
